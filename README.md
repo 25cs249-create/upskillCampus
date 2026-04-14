@@ -1,4 +1,4 @@
-  # 🔐 Password Manager (Python)
+# 🔐 Password Manager (Python)
 
 ## 📌 Project Overview  
 This project is a **Password Manager built using Python** that allows users to securely store, manage, and retrieve their passwords. It helps users avoid weak or repeated passwords by providing a secure and organized system for credential management.
@@ -17,41 +17,31 @@ The application uses encryption techniques to protect sensitive data and ensures
 
 ## 🚀 Features  
 
-- 🔒 Secure password storage using encryption  
-- 🔑 Master password protection  
+- 🔒 Secure password storage using AES encryption  
+- 🔑 Master password protection with PBKDF2HMAC key derivation  
 - ➕ Add new credentials (website, username, password)  
 - 🔍 Retrieve saved credentials  
-- 📋 List all stored websites  
-- ❌ Delete credentials  
-- ⚙️ Generate strong random passwords  
-- 🔁 Change master password  
+- ⚙️ Generate strong, cryptographically secure random passwords  
+- 🗄️ Local SQLite database for organized credential management  
 
 ---
 
 ## 🛠️ Technologies Used  
 
-- **Python 3**  
-- Libraries:
-  - `cryptography` – for encryption  
-  - `hashlib` – for hashing  
-  - `json` – for data storage  
+- **Python 3** - **Libraries:**
+  - `sqlite3` – for local database management  
+  - `cryptography` – for Fernet (AES) encryption and key derivation  
   - `secrets` – for secure password generation  
-  - `os` – for file handling  
+  - `os` & `getpass` – for file handling and secure password input  
 
 ---
 
 ## 📂 Project Structure  
 
-password_manager.py   # Main Python file  
-VAULT.json            # Encrypted storage file  
-README.md             # Documentation  
-Ankit_PasswordManager_USC_UCT.pdf   # Final Report  
-
----
-
-## ⚙️ Installation & Setup  
-
-1. Clone the repository:
-```bash
-git clone https://github.com/your-username/upskillcampus.git
-cd upskillcampus
+```text
+password_manager.py                                      # Main Python script
+requirements.txt                                         # Python dependencies
+README.md                                                # Documentation
+RAJADITYA_PasswordManager_InternshipReport_USC_UCT.pdf   # Internship Final Report
+vault.db                                                 # Encrypted local database (Generated on run - Do NOT upload)
+salt.key                                                 # Cryptographic salt (Generated on run - Do NOT upload)
