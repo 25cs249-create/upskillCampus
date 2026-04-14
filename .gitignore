@@ -1,0 +1,7 @@
+# Ignore the local database and encryption salt
+vault.db
+salt.key
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
