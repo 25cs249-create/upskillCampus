@@ -43,5 +43,3 @@ password_manager.py                                      # Main Python script
 requirements.txt                                         # Python dependencies
 README.md                                                # Documentation
 RAJADITYA_PasswordManager_InternshipReport_USC_UCT.pdf   # Internship Final Report
-vault.db                                                 # Encrypted local database (Generated on run - Do NOT upload)
-salt.key                                                 # Cryptographic salt (Generated on run - Do NOT upload)
